@@ -30,32 +30,72 @@ This repository is created to evaluate the assistant's ability to use Git, VSCod
 To start the React application, use the following command:
 ```bash
 npm start
+```
 
+## Contributing
+1. Navigate to:
 
+[test-assistant-repo](https://github.com/fimbifoi/test-assistant-repo)
+2. In the top-right corner of the page, click Fork.
+![Image on Forking a repository](https://docs.github.com/assets/cb-34352/mw-1440/images/help/repository/fork-button.webp)
 
-### 3. **Save the File:**
-   - Save the `README.md` file after entering the content.
+3. Under "Owner," select the dropdown menu and click an owner for the forked repository.
 
-### 4. **Check the Formatting on GitHub:**
-   - After pushing your changes to GitHub, the README file will automatically be displayed when someone visits the repository. The sections, links, code blocks, and other formatting should render correctly if done as shown.
+**_Note_**
 
-### Markdown Syntax Overview:
+_If your username is grayed out, it's because the fork already exists. Instead, you should bring your existing fork up to date. For more information, see "Syncing a fork."_
 
-- **Headings:** Use `#` for headings. More `#` symbols indicate smaller headings.
-- **Links:** Create links using `[text](URL)` syntax.
-- **Code Blocks:** Use triple backticks (```) for multi-line code blocks and single backticks (`) for inline code.
+4. By default, forks are named the same as their upstream repositories. Optionally, to further distinguish your fork, in the "test-assistant-repo" field, type a name.
 
-### Example Preview:
+5. Click Create fork.
 
-If done correctly, the README will display:
+6. Working on repository
+**Cloning a fork**
+You've successfully forked the "test-assistant-repo" repository, but so far, it only exists on GitHub. To be able to work on the project, you will need to clone it to your computer.
 
-- A **Title** at the top ("Test Assistant Repo").
-- A **Table of Contents** with clickable links to each section.
-- **Code blocks** that look like code and are easy to copy.
+You can clone your fork with the command line, or GitHub Desktop.
 
-### Additional Tips:
+To learn more about GitHub CLI, see  [GitHub CLI](https://docs.github.com/en/github-cli/github-cli/about-github-cli)
 
-- Replace `"YOUR_USERNAME"` with your actual GitHub username in the clone command under "Installation Instructions."
-- Make sure to preview your README on GitHub to ensure everything is formatted as expected.
+To create a clone of your fork, use the --clone flag.
 
-This approach ensures your README is professional and easy to follow, which is crucial for any technical documentation.
+```bash
+gh repo fork test-assistant-repo --clone=true
+```
+**Creating a branch to work on**
+Before making changes to the project, you should create a new branch and check it out. By keeping changes in their own branch, you follow GitHub Flow and ensure that it will be easier to contribute to the same project again in the future. For more information, see "GitHub flow."
+
+```bash
+git branch BRANCH-YourUsername
+```
+```bash
+git checkout BRANCH-YourUsername
+```
+**Making and pushing changes**
+Go ahead and make a few changes to the project using your favorite text editor
+
+When you're ready to submit your changes, stage and commit your changes. git add . tells Git that you want to include all of your changes in the next commit. git commit takes a snapshot of those changes.
+
+```bash
+git add .
+```
+```bash
+git commit -m "a short description of the change"
+```
+
+When you stage and commit files, you essentially tell Git, "Okay, take a snapshot of my changes!" You can continue to make more changes, and take more commit snapshots.
+
+Right now, your changes only exist locally. When you're ready to push your changes up to GitHub, push your changes to the remote.
+
+```bash
+git push
+```
+
+**Making a pull request**
+At last, you're ready to propose changes into the main project! This is the final step in producing a fork of someone else's project, and arguably the most important. If you've made a change that you feel would benefit the community as a whole, you should definitely consider contributing back.
+
+To do so, head on over to the repository on GitHub where your project lives. For this example, it would be at `https://github.com/<your_username>/test-assistant-repo`. You'll see a banner indicating that your branch is one commit ahead of octocat:main. Click Contribute and then Open a pull request.
+
+GitHub will bring you to a page that shows the differences between your fork and the octocat/Spoon-Knife repository. Click Create pull request.
+
+GitHub will bring you to a page where you can enter a title and a description of your changes. It's important to provide as much useful information and a rationale for why you're making this pull request in the first place. The project owner needs to be able to determine whether your change is as useful to everyone as you think it is. Finally, click Create pull request.
