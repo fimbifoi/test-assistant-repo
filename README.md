@@ -36,6 +36,7 @@ npm start
 1. Navigate to:
 
 [test-assistant-repo](https://github.com/fimbifoi/test-assistant-repo)
+
 2. In the top-right corner of the page, click Fork.
 ![Image on Forking a repository](https://docs.github.com/assets/cb-34352/mw-1440/images/help/repository/fork-button.webp)
 
@@ -63,6 +64,7 @@ To create a clone of your fork, use the --clone flag.
 gh repo fork test-assistant-repo --clone=true
 ```
 **Creating a branch to work on**
+
 Before making changes to the project, you should create a new branch and check it out. By keeping changes in their own branch, you follow GitHub Flow and ensure that it will be easier to contribute to the same project again in the future. For more information, see "GitHub flow."
 
 ```bash
@@ -72,6 +74,7 @@ git branch BRANCH-YourUsername
 git checkout BRANCH-YourUsername
 ```
 **Making and pushing changes**
+
 Go ahead and make a few changes to the project using your favorite text editor
 
 When you're ready to submit your changes, stage and commit your changes. git add . tells Git that you want to include all of your changes in the next commit. git commit takes a snapshot of those changes.
@@ -92,6 +95,7 @@ git push
 ```
 
 **Making a pull request**
+
 At last, you're ready to propose changes into the main project! This is the final step in producing a fork of someone else's project, and arguably the most important. If you've made a change that you feel would benefit the community as a whole, you should definitely consider contributing back.
 
 To do so, head on over to the repository on GitHub where your project lives. For this example, it would be at `https://github.com/<your_username>/test-assistant-repo`. You'll see a banner indicating that your branch is one commit ahead of octocat:main. Click Contribute and then Open a pull request.
