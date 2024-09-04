@@ -32,6 +32,10 @@ To start the React application, use the following command:
 npm start
 ```
 
+### More on the App
+
+[Click Here](./README-react-installation.md)
+
 ## Contributing
 1. Navigate to:
 
@@ -107,4 +111,5 @@ GitHub will bring you to a page where you can enter a title and a description of
 
 ## License
 
-[License](https://github.com/fimbifoi/test-assistant-repo/blob/main/LICENSE)
+This project is licensed under the MIT License
+[Read More](https://github.com/fimbifoi/test-assistant-repo/blob/main/LICENSE)
